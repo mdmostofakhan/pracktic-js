@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pracktic Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center mt-8 text-5xl font-bold ">Ammar onek <span class="text-amber-600 font-semibold">taka
+                lagbe</span>!!
+        </h1>
+    </header>
+    <main>
+        <section class="mt-8">
+            <div class="grid grid-cols-3 text-white  w-3/4 mx-auto gap-4">
+                <div class="bg-pink-400 p-8 rounded-lg">
+                    <h1 class="text-3xl">Doposit</h1>
+                    <h4 class="text-4xl font-medium">$<span id="deposit-total">00</span></h4>
+                </div>
+                <div class="bg-green-400 p-8 rounded-lg">
+                    <h1 class="text-3xl ">Withdraw</h1>
+                    <h4 class="text-4xl font-medium">$<span id="withdraw-total">00</span></h4>
+                </div>
+                <div class="bg-teal-400  p-8 rounded-lg">
+                    <h1 class="text-3xl">Balance</h1>
+                    <h4 class="text-4xl font-medium">$<span id="balance-total">1200</span></h4>
+                </div>
+            </div>
+        </section>
+        <!-- input button er kaj -->
+        <section class="mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-sky-400 p-8 rounded-lg">
+                    <h1 class="text-3xl mb-4">Your Doposit</h1>
+                    <input id="deposit-field" class="w-3/4 px-2 rounded-lg block " type="text"
+                        placeholder="$ Amonut you want to do">
+                    <button id="btn-deposit"
+                        class="font-medium px-6 py-2 bg-yellow-400 mt-4 rounded-lg hover:bg-pink-400">Doposit</button>
+                </div>
+                <div class="bg-violet-400 px-3 p-8 rounded-lg">
+                    <h1 class="text-3xl mb-4">Your Withdraw</h1>
+                    <input id="withdraw-field" class="w-3/4 px-2 rounded-lg block " type="text"
+                        placeholder="$ Amonut you want to do">
+                    <button id="btn-withdraw"
+                        class=" font-medium px-6 py-2 bg-yellow-400 mt-4 rounded-lg hover:bg-pink-400">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
